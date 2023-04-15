@@ -10,8 +10,8 @@ lengt = 0
 def logic(current_pos, ramifications, x, first):
     copy = current_pos
     current = current_pos
-    ran = rt(0,20)
-    random = rt(0,1)
+    ran = rt(0, 20)
+    random = rt(0, 1)
     index = 1 if random == 0 else (-1)
     try:
         if x == 0:
@@ -26,7 +26,7 @@ def logic(current_pos, ramifications, x, first):
         if ramifications == 6 and lengt == 0:
             for i in range(ran):
                 if i % 3 == 0:
-                    random = rt(0,1)
+                    random = rt(0, 1)
                     index = 1 if random == 0 else (-1)
                 current -= index
                 data[first + i, current] = [0, 0, 255]
